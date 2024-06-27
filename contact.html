@@ -25,28 +25,11 @@ body, h1, h2, h3, h4, h5, h6 {
 	font-weight: 500;
 }
 body, html {height: 100%}
-.video-container {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-
-.video-container video {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  min-width: 100%;
-  min-height: 100%;
-}
-
-.w3-top {
-  position: static; /* Remove fixed positioning to allow scrolling */
-}
-
 .bgimg {
-  display: none; /* Hide the previous background image */
+  background-image: url('images/TRWS_banner2.png');
+  min-height: 100%;
+  background-position: center;
+  background-size:cover;
 }
 </style>
 </head>
@@ -65,39 +48,36 @@ body, html {height: 100%}
   	</div>
 </div>
 	
-<!-- DJ TRWS Background video -->
-<div class="video-container">
-  <video autoplay muted loop>
-    <source src="Sequence 01.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-</div>
-
-<!-- Main Content -->
-<div class="w3-display-middle">
+<!-- DJ TRWS Background image -->
+<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+  <div class="w3-display-topleft w3-padding-large w3-xlarge">
+ 	
+  </div>
+  <div class="w3-display-middle">
 	<!-- TRWS Heading -->
-    <h1 class="w3-jumbo"  style="font-weight: 700; color:white">TRWS</h1>
+    <h1 class="w3-jumbo"  style="font-weight: 700">TRWS</h1>
     <hr class="w3-border-grey" style="margin:auto;width:60%">
 	<div class="">
 		
 		<!-- Main Content: DJ Booking and Presskit -->
 		
-		<div style="cursor: pointer; " class="w3-panel w3-hover-purple">
+		<div style="cursor: pointer; " class="w3-panel w3-hover-amber">
 			<a class="w3-center" href="mailto:trws.music@posteo.de" style="text-decoration:none">
-				<p class="w3-center" style="color:white">Booking</p>
-				<p class="w3-center" style="font-weight: 200; color:white"> trws.music@posteo.de </p>
+				<p class="w3-center">Booking:</p>
+				<p class="w3-center" style="font-weight: 200"> trws.music@posteo.de </p>
 			</a>
 		</div>
-		<div style="cursor: pointer" class="w3-panel w3-hover-purple" onclick="window.open('https://www.drive.google.com/drive/folders/1jUy9jEw-9UdxkbzldYkcH66nbZk4BC1g','_blank')">
+		<div style="cursor: pointer" class="w3-panel w3-hover-amber" onclick="window.open('https://www.drive.google.com/drive/folders/1jUy9jEw-9UdxkbzldYkcH66nbZk4BC1g','_blank')">
 			<a class="w3-center" style="text-decoration:none">
-				<p class="w3-center" style="color:white">Presskit, Media & Rider</p>
-				<p class="w3-center" style="font-weight: 200; color:white"> Download here</p>
+				<p class="w3-center ">Presskit:</p>
+				<p class="w3-center" style="font-weight: 200"> Download here</p>
 			</a>
 		</div>
 		
 	</div>
 	
   </div>
+</div>
 
 </body>
 </html>
